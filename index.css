@@ -1,0 +1,165 @@
+:root {
+ --color1: #001514;
+ --color2: #a4d4b4;
+ --color3: #f0f7f4;
+ --color4: #f03a47;
+ --color5: #e6af2e;
+ --color6: #051923;
+}
+
+body { 
+    background: var(--color1);
+    color: var(--color2);
+}
+
+body.darkMode {
+    background: var(--color2);
+    color: var(--color1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero .container {
+    width: 85%;
+    margin: 20% auto;
+}
+
+.hero .container .subhead {
+    font-family: 'Berlin Sans FB Regular';
+    font-weight: bold;
+    letter-spacing: .2em;
+    margin-bottom: -2em;
+    color: var(--color4);
+}
+
+.hero .container h3 {
+    font-family: 'Cooper Black';
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.5em;
+    word-spacing: .3em;
+    color: var(--color5);
+}
+
+.hero .container span {
+    color: var(--color4);
+}
+
+.hero .container p {
+    font-family: 'Berlin Sans FB Regular';
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.links .container {
+    text-align: center;
+}
+
+.links .container ul {
+    display: inline-flex;
+}
+
+.links .container ul li {
+    padding: .5em;
+}
+
+.links .container img {
+    opacity: 0.8;
+    display: block;
+    width: 2em;
+}
+
+.links .container img:hover {
+    opacity: 1;
+}
+
+.footer .container p {
+    color: var(--color5);
+    font-family: 'Berlin Sans FB Regular';
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.footer .container span {
+    color: var(--color4);
+    letter-spacing: .1em;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .links .container {
+        text-align: unset;
+    }
+    
+    .links .container ul {
+        display: inline-block;
+        position: fixed;
+        top: 30%;
+    }
+
+    .footer .container p {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero .container {
+        margin: 10% auto;
+    }
+
+    .hero .container .subhead {
+        margin-bottom: -2.5em;
+        font-size: 1.2em;
+        letter-spacing: .2em;
+    }
+
+    .hero .container h3 {
+        font-size: 2.5em;
+        margin-bottom: -.1em;
+    }
+    
+    .links .container ul li {
+        margin: .5em 1.5em;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .hero .container {
+        margin: 10% auto 5%;
+    }
+
+    .hero .container .subhead {
+        margin-bottom: -3.5em;
+        font-size: 1.2em;
+        letter-spacing: .2em;
+    }
+
+    .hero .container h3 {
+        font-size: 3.5em;
+    }
+
+    .hero .container p {
+        font-size: 1.2em;
+    }
+
+    .footer .container {
+        text-align: center;
+    }
+
+}
